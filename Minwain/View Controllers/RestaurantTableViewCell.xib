@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="RestaurantTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNV-I7-qTo">
+                        <rect key="frame" x="8" y="12" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="1xY-Gp-998"/>
+                            <constraint firstAttribute="width" constant="80" id="g91-ZA-W9m"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1e-2E-iP9">
+                        <rect key="frame" x="96" y="12" width="89" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="osQ-v9-Khi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.13725490196078433" green="0.31372549019607843" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="open.png" translatesAutoresizingMaskIntoConstraints="NO" id="cA1-jo-zhl">
+                        <rect key="frame" x="247" y="12" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="24J-uR-Qj2"/>
+                            <constraint firstAttribute="width" constant="65" id="j1t-O7-KpG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHL-bO-w2s">
+                        <rect key="frame" x="96" y="30" width="143" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="8GM-kA-6K1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.13725490196078433" green="0.31372549019607843" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rest_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="pnK-5O-G5V">
+                        <rect key="frame" x="193" y="12" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="27" id="02g-Ui-ZEu"/>
+                            <constraint firstAttribute="height" constant="27" id="rph-0z-NFb"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="watch_cell.png" translatesAutoresizingMaskIntoConstraints="NO" id="vcu-bP-z5p">
+                        <rect key="frame" x="96" y="40" width="21" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="hyr-uX-jFf"/>
+                            <constraint firstAttribute="width" constant="21" id="zAR-Qs-oMB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2P-9R-vRB">
+                        <rect key="frame" x="96" y="60" width="120" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.77254901960784317" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cart_cell.png" translatesAutoresizingMaskIntoConstraints="NO" id="cDI-t5-dY1">
+                        <rect key="frame" x="160" y="40" width="21" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="21" id="8Ed-2X-xFI"/>
+                            <constraint firstAttribute="height" constant="17" id="jD6-yw-dZp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dx5-Fp-vPy">
+                        <rect key="frame" x="224" y="62" width="94" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.7725490196" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="vehicle.png" translatesAutoresizingMaskIntoConstraints="NO" id="pQ6-4x-6j7">
+                        <rect key="frame" x="224" y="40" width="21" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="RsE-NS-yd4"/>
+                            <constraint firstAttribute="width" constant="21" id="oEI-Kp-qsD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAn-4Y-oYw">
+                        <rect key="frame" x="311" y="56" width="1" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.13725490200000001" green="0.31372549020000001" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RF-di-CaS">
+                        <rect key="frame" x="248" y="12" width="64" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Nza-Fn-n8A"/>
+                            <constraint firstAttribute="width" constant="64" id="f6K-sF-QIa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.52156862749999999" green="0.70980392160000005" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xml-KH-PW0">
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delivery Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqw-FC-ae1">
+                        <rect key="frame" x="96" y="41" width="85" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Working Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHr-I8-Na5">
+                        <rect key="frame" x="224" y="41" width="88" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewProduct" destination="KNV-I7-qTo" id="uOb-fg-J8U"/>
+                <outlet property="imageViewStatus" destination="cA1-jo-zhl" id="YO4-B5-stD"/>
+                <outlet property="labelAddress" destination="fHL-bO-w2s" id="l5s-k4-DZD"/>
+                <outlet property="labelCharges" destination="xAn-4Y-oYw" id="6HL-pI-X8P"/>
+                <outlet property="labelMinOrder" destination="Dx5-Fp-vPy" id="b0d-Dx-W01"/>
+                <outlet property="labelStatus" destination="7RF-di-CaS" id="yk8-03-xUD"/>
+                <outlet property="labelTime" destination="O2P-9R-vRB" id="yo6-lZ-zIA"/>
+                <outlet property="labelTotle" destination="q1e-2E-iP9" id="e5W-HR-IIa"/>
+                <outlet property="viewPayment" destination="xml-KH-PW0" id="UJc-WJ-tEX"/>
+            </connections>
+            <point key="canvasLocation" x="830" y="599"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cart_cell.png" width="24" height="23"/>
+        <image name="open.png" width="47" height="47"/>
+        <image name="rest_info.png" width="24" height="24"/>
+        <image name="vehicle.png" width="32" height="23"/>
+        <image name="watch_cell.png" width="23" height="23"/>
+    </resources>
+</document>

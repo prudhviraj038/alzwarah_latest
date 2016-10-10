@@ -7,6 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+
+#import "HomeViewController.h"
+#import <ECSlidingViewController.h>
+
+@implementation UILabel (Helper)
+- (void)setSubstituteFontName:(NSString *)name UI_APPEARANCE_SELECTOR {
+    self.font = [UIFont fontWithName:name size:self.font.pointSize]; }
+@end
 
 @interface AppDelegate ()
 
@@ -14,10 +24,130 @@
 
 @implementation AppDelegate
 
+- (void)downloadStringsFile {
+    NSData *data2 = [NSData dataWithContentsOfURL:[Utils createURLForPage:PAGE_WORDS withParameters:@{}]];
+    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data2 options:NSJSONReadingMutableContainers error:nil];
+    NSData *data = [NSJSONSerialization dataWithJSONObject:dictionary options:NSJSONWritingPrettyPrinted error:nil];
+    NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+    NSURL *filePath = [documentsDirectoryURL URLByAppendingPathComponent:@"strings.json"];
+    NSLog(@"file: %@", filePath);
+    
+    [data writeToURL:filePath atomically:YES];
+    
+    [MCLocalization loadFromURL:filePath defaultLanguage:KEY_LANGUAGE_EN];
+    if ([[Utils getLanguage] length] != 0) {
+        [[MCLocalization sharedInstance] setLanguage:[Utils getLanguage]];
+        [[MCLocalization sharedInstance] reloadStrings];
+    }
+}
+
+- (void)reloadUI {
+    self.window.rootViewController = [Utils getViewControllerWithId:@"ECSlidingViewController"];
+    
+    ECSlidingViewController *vc = (ECSlidingViewController *) self.window.rootViewController;
+    UINavigationController *nav = (UINavigationController *) vc.topViewController;
+    self.homeVC = nav.topViewController;
+    
+    self.termsVC = [Utils getViewControllerWithId:@"TermsAndConditionsViewController"];
+    self.couponsVC = [Utils getViewControllerWithId:@"CouponsListViewController"];
+    self.promotionsVC = [Utils getViewControllerWithId:@"AllPromotionsListViewController"];
+    self.cartVC = [Utils getViewControllerWithId:@"CartViewController"];
+    self.aboutUsVC = [Utils getViewControllerWithId:@"AboutUsViewController"];
+    self.whatWeDoVC = [Utils getViewControllerWithId:@"WhatWeDoViewController"];
+    self.contactUsVC = [Utils getViewControllerWithId:@"ContactUsViewController"];
+    self.notificationsVC = [Utils getViewControllerWithId:@"NotificationsViewController"];
+    self.myAccountVC = [Utils getViewControllerWithId:@"MyAccountViewController"];
+    
+    if ([[Utils getLanguage] isEqualToString:KEY_LANGUAGE_AR]) {
+        //[[UILabel appearance] setSubstituteFontName:@"GE Flow"];
+        //[[UILabel appearance] setTextAlignment:NSTextAlignmentRight];
+        [[UITextField appearance] setTextAlignment:NSTextAlignmentRight];
+        [[UITextView appearance] setTextAlignment:NSTextAlignmentRight];
+        
+        
+        [[UIView appearance] setSemanticContentAttribute:UISemanticContentAttributeForceRightToLeft];
+        
+        //[[UIButton appearance] titleLabel].font = [UIFont fontWithName:@"GE Flow" size:17];
+    } else {
+        //[[UILabel appearance] setTextAlignment:NSTextAlignmentLeft];
+        //[[UILabel appearance] setFont:[UIFont systemFontOfSize:15]];
+        [[UITextField appearance] setTextAlignment:NSTextAlignmentLeft];
+        [[UITextView appearance] setTextAlignment:NSTextAlignmentLeft];
+        [[UIView appearance] setSemanticContentAttribute:UISemanticContentAttributeForceLeftToRight];
+    }
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    } else {
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeNewsstandContentAvailability| UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    }
+    
+    
+    [self downloadStringsFile];
+    [self reloadUI];
+    
+    UILocalNotification *notification = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (notification) {
+        NSDictionary *aps = [notification.userInfo objectForKey:@"aps"];
+        if ([[aps valueForKey:@"type"] isEqualToString:@"rest"]) {
+            [self reloadUI];
+            
+            ECSlidingViewController *vc = (ECSlidingViewController *) self.window.rootViewController;
+            UINavigationController *navigationController = (UINavigationController *) vc.topViewController;
+            self.notificationRestaurantId = [aps valueForKey:@"type_id"];
+            navigationController.viewControllers = @[self.homeVC];
+        } else if ([[aps valueForKey:@"type"] isEqualToString:@"order"]) {
+            if ([Utils loggedInUserId] != -1) {
+                ECSlidingViewController *vc = (ECSlidingViewController *) self.window.rootViewController;
+                UINavigationController *navigationController = (UINavigationController *) vc.topViewController;
+                navigationController.viewControllers = @[[APP_DELEGATE myAccountVC]];
+            }
+        }
+    }
+    
     return YES;
+}
+
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken {
+    NSString* strDeviceToken = [[[[deviceToken description]
+                                  stringByReplacingOccurrencesOfString: @"<" withString: @""]
+                                 stringByReplacingOccurrencesOfString: @">" withString: @""]
+                                stringByReplacingOccurrencesOfString: @" " withString: @""] ;
+    NSLog(@"Device_Token     -----> %@\n", strDeviceToken);
+    [[NSUserDefaults standardUserDefaults] setValue:strDeviceToken forKey:@"TOKEN"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHandler {
+    NSLog(@"Notification received");
+    NSDictionary *aps = [userInfo objectForKey:@"aps"];
+    if ([[aps valueForKey:@"type"] isEqualToString:@"rest"]) {
+        [self reloadUI];
+        
+        ECSlidingViewController *vc = (ECSlidingViewController *) self.window.rootViewController;
+        UINavigationController *navigationController = (UINavigationController *) vc.topViewController;
+        self.notificationRestaurantId = [aps valueForKey:@"type_id"];
+        navigationController.viewControllers = @[self.homeVC];
+    } else if ([[aps valueForKey:@"type"] isEqualToString:@"order"]) {
+        if ([Utils loggedInUserId] != -1) {
+            ECSlidingViewController *vc = (ECSlidingViewController *) self.window.rootViewController;
+            UINavigationController *navigationController = (UINavigationController *) vc.topViewController;
+            navigationController.viewControllers = @[[APP_DELEGATE myAccountVC]];
+        }
+    }
+    
+    completionHandler(UIBackgroundFetchResultNewData);
+}
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)())completionHandler {
+    
+    NSLog(@"Notification received in handler");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

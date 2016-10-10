@@ -1,0 +1,222 @@
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "3Gp-Ew-Ayy"; */
+"3Gp-Ew-Ayy.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3KS-Tf-fXb"; */
+"3KS-Tf-fXb.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "House / Building *"; ObjectID = "5hT-CN-GD0"; */
+"5hT-CN-GD0.placeholder" = "House / Building *";
+
+/* Class = "UITextField"; placeholder = "Last Name *"; ObjectID = "7z6-ll-UXJ"; */
+"7z6-ll-UXJ.placeholder" = "Last Name *";
+
+/* Class = "UILabel"; text = "TRENDING"; ObjectID = "9on-m8-YAr"; */
+"9on-m8-YAr.text" = "TRENDING";
+
+/* Class = "UIButton"; normalTitle = "عربية"; ObjectID = "Ag6-cv-hTp"; */
+"Ag6-cv-hTp.normalTitle" = "عربية";
+
+/* Class = "UITextField"; placeholder = "First Name *"; ObjectID = "DWa-T3-tvd"; */
+"DWa-T3-tvd.placeholder" = "First Name *";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "Ekh-MQ-NAg"; */
+"Ekh-MQ-NAg.placeholder" = "Confirm Password";
+
+/* Class = "UITextField"; placeholder = "Area *"; ObjectID = "F75-AW-dEF"; */
+"F75-AW-dEF.placeholder" = "Area *";
+
+/* Class = "UITextField"; placeholder = "Floor Number"; ObjectID = "F8F-pp-Yxw"; */
+"F8F-pp-Yxw.placeholder" = "Floor Number";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "FjJ-qH-9Rd"; */
+"FjJ-qH-9Rd.normalTitle" = "Register";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IZo-Ig-Wi8"; */
+"IZo-Ig-Wi8.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "New here? Sign Up"; ObjectID = "Ib0-an-XHu"; */
+"Ib0-an-XHu.normalTitle" = "New here? Sign Up";
+
+/* Class = "UITextField"; placeholder = "Mobile Number *"; ObjectID = "JON-hj-c9T"; */
+"JON-hj-c9T.placeholder" = "Mobile Number *";
+
+/* Class = "UILabel"; text = "DON'T KNOW"; ObjectID = "JbB-cB-zaw"; */
+"JbB-cB-zaw.text" = "DON'T KNOW";
+
+/* Class = "UITextField"; placeholder = "Flat Number"; ObjectID = "JtZ-CZ-Zde"; */
+"JtZ-CZ-Zde.placeholder" = "Flat Number";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KHm-lm-0cc"; */
+"KHm-lm-0cc.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "House / Building *"; ObjectID = "Kip-HN-1EB"; */
+"Kip-HN-1EB.placeholder" = "House / Building *";
+
+/* Class = "UITextField"; placeholder = "Area *"; ObjectID = "LD5-kT-0ma"; */
+"LD5-kT-0ma.placeholder" = "Area *";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "Lar-4g-f9T"; */
+"Lar-4g-f9T.normalTitle" = "+";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "MQB-0F-d5u"; */
+"MQB-0F-d5u.normalTitle" = "OK";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "OUs-fr-BBd"; */
+"OUs-fr-BBd.placeholder" = "Email Address";
+
+/* Class = "UITextField"; placeholder = "Flat Number"; ObjectID = "OWs-eD-WiS"; */
+"OWs-eD-WiS.placeholder" = "Flat Number";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "OZJ-cZ-pyI"; */
+"OZJ-cZ-pyI.text" = "1";
+
+/* Class = "UIButton"; normalTitle = "Procced To Pay"; ObjectID = "Ond-8J-bDH"; */
+"Ond-8J-bDH.normalTitle" = "Procced To Pay";
+
+/* Class = "UITextField"; placeholder = "Street *"; ObjectID = "Osf-xt-ihw"; */
+"Osf-xt-ihw.placeholder" = "Street *";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "PJj-LE-8pk"; */
+"PJj-LE-8pk.normalTitle" = "Submit";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "Pck-0f-Y4v"; */
+"Pck-0f-Y4v.normalTitle" = "Save";
+
+/* Class = "UITextField"; placeholder = "Enter your Code"; ObjectID = "Pjx-C4-z0m"; */
+"Pjx-C4-z0m.placeholder" = "Enter your Code";
+
+/* Class = "UITextField"; placeholder = "Floor Number"; ObjectID = "QQO-bn-QbZ"; */
+"QQO-bn-QbZ.placeholder" = "Floor Number";
+
+/* Class = "UIButton"; normalTitle = "Choose Your Area"; ObjectID = "SEk-ap-DkB"; */
+"SEk-ap-DkB.normalTitle" = "Choose Your Area";
+
+/* Class = "UITextField"; placeholder = "First Name *"; ObjectID = "SHp-Vy-g14"; */
+"SHp-Vy-g14.placeholder" = "First Name *";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "T3J-xG-HJV"; */
+"T3J-xG-HJV.normalTitle" = "-";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TA5-Mu-aOX"; */
+"TA5-Mu-aOX.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "V9P-aA-jCh"; */
+"V9P-aA-jCh.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Change Password"; ObjectID = "VUK-hW-4Ls"; */
+"VUK-hW-4Ls.normalTitle" = "Change Password";
+
+/* Class = "UITextField"; placeholder = "Email *"; ObjectID = "VVV-pD-TgH"; */
+"VVV-pD-TgH.placeholder" = "Email *";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "WYI-V0-BRd"; */
+"WYI-V0-BRd.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password *"; ObjectID = "Wrd-gd-Jmg"; */
+"Wrd-gd-Jmg.placeholder" = "Password *";
+
+/* Class = "UITextField"; placeholder = "Street *"; ObjectID = "XJJ-9q-mT6"; */
+"XJJ-9q-mT6.placeholder" = "Street *";
+
+/* Class = "UIButton"; normalTitle = "Procced To Pay"; ObjectID = "XPE-4R-eAW"; */
+"XPE-4R-eAW.normalTitle" = "Procced To Pay";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "XwM-tB-QmX"; */
+"XwM-tB-QmX.title" = "Settings";
+
+/* Class = "UITextField"; placeholder = "Block *"; ObjectID = "YJA-RO-0Dc"; */
+"YJA-RO-0Dc.placeholder" = "Block *";
+
+/* Class = "UITabBarItem"; title = "Addresses"; ObjectID = "b0G-ub-aHX"; */
+"b0G-ub-aHX.title" = "Addresses";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "b0l-6P-tAE"; */
+"b0l-6P-tAE.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "b1k-4D-yG9"; */
+"b1k-4D-yG9.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Change Password"; ObjectID = "dxl-D6-8sy"; */
+"dxl-D6-8sy.title" = "Change Password";
+
+/* Class = "UIButton"; normalTitle = "add to cart"; ObjectID = "e06-eb-faf"; */
+"e06-eb-faf.normalTitle" = "add to cart";
+
+/* Class = "UITextField"; placeholder = "Mobile Number *"; ObjectID = "eKM-Jb-G0W"; */
+"eKM-Jb-G0W.placeholder" = "Mobile Number *";
+
+/* Class = "UITabBarItem"; title = "My Orders"; ObjectID = "eTf-3t-BbO"; */
+"eTf-3t-BbO.title" = "My Orders";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "fBd-iW-oJl"; */
+"fBd-iW-oJl.normalTitle" = "Login";
+
+/* Class = "UIButton"; normalTitle = "What do you want to order?"; ObjectID = "fkM-lR-3PE"; */
+"fkM-lR-3PE.normalTitle" = "What do you want to order?";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fsK-e6-tbk"; */
+"fsK-e6-tbk.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Add Address"; ObjectID = "g0G-jf-Kt4"; */
+"g0G-jf-Kt4.normalTitle" = "Add Address";
+
+/* Class = "UITextField"; placeholder = "First Name *"; ObjectID = "hA0-1Y-xbS"; */
+"hA0-1Y-xbS.placeholder" = "First Name *";
+
+/* Class = "UIButton"; normalTitle = "Forgot password ?"; ObjectID = "hX0-8A-U4v"; */
+"hX0-8A-U4v.normalTitle" = "Forgot password ?";
+
+/* Class = "UIButton"; normalTitle = "Choose"; ObjectID = "haR-kt-eIh"; */
+"haR-kt-eIh.normalTitle" = "Choose";
+
+/* Class = "UIButton"; normalTitle = "Show Menu"; ObjectID = "iaB-N3-4UA"; */
+"iaB-N3-4UA.normalTitle" = "Show Menu";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "ico-Cq-dWG"; */
+"ico-Cq-dWG.normalTitle" = "Skip";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "ipX-Nr-l9g"; */
+"ipX-Nr-l9g.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Send Message"; ObjectID = "nNd-w4-2WU"; */
+"nNd-w4-2WU.normalTitle" = "Send Message";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "ooT-jm-KDE"; */
+"ooT-jm-KDE.normalTitle" = "English";
+
+/* Class = "UIButton"; normalTitle = "Add Address"; ObjectID = "rCf-Y3-qIa"; */
+"rCf-Y3-qIa.normalTitle" = "Add Address";
+
+/* Class = "UITextField"; placeholder = "First Name *"; ObjectID = "rYv-CV-a8a"; */
+"rYv-CV-a8a.placeholder" = "First Name *";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "sDJ-sp-dVy"; */
+"sDJ-sp-dVy.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password *"; ObjectID = "slB-8F-CRe"; */
+"slB-8F-CRe.placeholder" = "Password *";
+
+/* Class = "UITextField"; placeholder = "Email *"; ObjectID = "uO2-Ky-Wij"; */
+"uO2-Ky-Wij.placeholder" = "Email *";
+
+/* Class = "UITextField"; placeholder = "First Name *"; ObjectID = "uPg-KX-POV"; */
+"uPg-KX-POV.placeholder" = "First Name *";
+
+/* Class = "UITextField"; placeholder = "Last Name *"; ObjectID = "ue6-cH-A3V"; */
+"ue6-cH-A3V.placeholder" = "Last Name *";
+
+/* Class = "UITextField"; placeholder = "Block *"; ObjectID = "vck-7P-7cE"; */
+"vck-7P-7cE.placeholder" = "Block *";
+
+/* Class = "UITabBarItem"; title = "Edit Profile"; ObjectID = "wKi-6O-Go4"; */
+"wKi-6O-Go4.title" = "Edit Profile";
+
+/* Class = "UILabel"; text = "Copyright Min Wain 2016"; ObjectID = "wta-k6-tzi"; */
+"wta-k6-tzi.text" = "Copyright Min Wain 2016";
+
+/* Class = "UIButton"; normalTitle = "Select Area"; ObjectID = "wz3-w4-16q"; */
+"wz3-w4-16q.normalTitle" = "Select Area";
+
+/* Class = "UIButton"; normalTitle = "Biometric Login"; ObjectID = "x1H-H3-2ay"; */
+"x1H-H3-2ay.normalTitle" = "Biometric Login";

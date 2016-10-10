@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IS6-j2-GE6" customClass="ProductOptionView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOB-QR-7Uv" userLabel="View 1">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMd-cp-k60">
+                            <rect key="frame" x="15" y="0.0" width="375" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="dJ9-g3-fdc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="checkbox_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fan-n0-sTg">
+                            <rect key="frame" x="366" y="13" width="24" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="aXm-ci-iVn"/>
+                                <constraint firstAttribute="height" constant="14" id="rNA-ON-OgQ"/>
+                            </constraints>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="checkbox_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zfz-Aq-9xA">
+                            <rect key="frame" x="372" y="17" width="12" height="7"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcn-vU-pO0">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
+                            <connections>
+                                <action selector="toggleOption1:" destination="IS6-j2-GE6" eventType="touchUpInside" id="fg8-tp-8mW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Fan-n0-sTg" secondAttribute="trailing" constant="10" id="6SX-es-wgt"/>
+                        <constraint firstAttribute="height" constant="40" id="6zQ-PY-7fc"/>
+                        <constraint firstItem="Fan-n0-sTg" firstAttribute="centerY" secondItem="rOB-QR-7Uv" secondAttribute="centerY" id="Jbs-eR-0eN"/>
+                        <constraint firstItem="Fcn-vU-pO0" firstAttribute="centerY" secondItem="Fan-n0-sTg" secondAttribute="centerY" id="OAq-gU-ehz"/>
+                        <constraint firstItem="Zfz-Aq-9xA" firstAttribute="centerX" secondItem="Fan-n0-sTg" secondAttribute="centerX" id="QQH-w7-1tJ"/>
+                        <constraint firstItem="Fcn-vU-pO0" firstAttribute="leading" secondItem="rOB-QR-7Uv" secondAttribute="leading" id="U3S-jf-FPh"/>
+                        <constraint firstItem="dMd-cp-k60" firstAttribute="leading" secondItem="rOB-QR-7Uv" secondAttribute="leading" constant="15" id="WRV-aK-7gb"/>
+                        <constraint firstAttribute="trailing" secondItem="Fcn-vU-pO0" secondAttribute="trailing" id="a1k-3n-flI"/>
+                        <constraint firstItem="Fcn-vU-pO0" firstAttribute="top" secondItem="rOB-QR-7Uv" secondAttribute="top" id="bBl-Rq-s12"/>
+                        <constraint firstItem="Zfz-Aq-9xA" firstAttribute="centerY" secondItem="Fan-n0-sTg" secondAttribute="centerY" id="fqk-wz-d6b"/>
+                        <constraint firstAttribute="trailing" secondItem="dMd-cp-k60" secondAttribute="trailing" constant="10" id="gCR-hP-ojk"/>
+                        <constraint firstItem="Fcn-vU-pO0" firstAttribute="centerY" secondItem="rOB-QR-7Uv" secondAttribute="centerY" id="kdK-dt-KVO"/>
+                        <constraint firstItem="dMd-cp-k60" firstAttribute="centerY" secondItem="rOB-QR-7Uv" secondAttribute="centerY" id="uJF-Q9-KVj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rOB-QR-7Uv" firstAttribute="centerY" secondItem="IS6-j2-GE6" secondAttribute="centerY" id="4W3-ot-enR"/>
+                <constraint firstItem="rOB-QR-7Uv" firstAttribute="width" secondItem="IS6-j2-GE6" secondAttribute="width" id="VjG-7G-7fm"/>
+                <constraint firstItem="rOB-QR-7Uv" firstAttribute="leading" secondItem="IS6-j2-GE6" secondAttribute="leading" id="teb-sA-dOq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button1" destination="Fcn-vU-pO0" id="40I-f8-Jkz"/>
+                <outlet property="imageView1" destination="Zfz-Aq-9xA" id="GJW-sn-4Dj"/>
+                <outlet property="label1" destination="dMd-cp-k60" id="MCT-vR-VyY"/>
+                <outlet property="viewOption1" destination="rOB-QR-7Uv" id="TQH-Gm-EbB"/>
+            </connections>
+            <point key="canvasLocation" x="328" y="168"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkbox_blue.png" width="23" height="15"/>
+        <image name="checkbox_white.png" width="12" height="7"/>
+    </resources>
+</document>

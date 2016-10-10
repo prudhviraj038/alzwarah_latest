@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HyM-gO-vDx" customClass="PlaceOrderHeader">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9w6-bC-7CW">
+                    <rect key="frame" x="0.0" y="18" width="347" height="31"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="0DR-be-o5f"/>
+                        <constraint firstAttribute="width" constant="222" id="cgR-B5-mKV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="cgR-B5-mKV"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GUg-UZ-i4j">
+                    <rect key="frame" x="0.0" y="53" width="347" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Za-NQ-fyG">
+                    <rect key="frame" x="0.0" y="49" width="347" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Xpz-Pd-CKI"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="1" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2Za-NQ-fyG" firstAttribute="top" secondItem="9w6-bC-7CW" secondAttribute="bottom" id="1Zp-bO-zjV"/>
+                <constraint firstItem="2Za-NQ-fyG" firstAttribute="width" secondItem="HyM-gO-vDx" secondAttribute="width" id="5lA-px-JY1"/>
+                <constraint firstItem="GUg-UZ-i4j" firstAttribute="centerX" secondItem="HyM-gO-vDx" secondAttribute="centerX" id="OZr-cb-U71"/>
+                <constraint firstItem="9w6-bC-7CW" firstAttribute="top" secondItem="HyM-gO-vDx" secondAttribute="top" constant="18" id="WsA-Fc-IFJ"/>
+                <constraint firstItem="GUg-UZ-i4j" firstAttribute="top" secondItem="9w6-bC-7CW" secondAttribute="bottom" constant="4" id="ZLy-DN-r95"/>
+                <constraint firstItem="GUg-UZ-i4j" firstAttribute="width" secondItem="HyM-gO-vDx" secondAttribute="width" id="gff-gF-7Hy"/>
+                <constraint firstItem="9w6-bC-7CW" firstAttribute="width" secondItem="HyM-gO-vDx" secondAttribute="width" id="jPe-mw-rqq"/>
+                <constraint firstItem="2Za-NQ-fyG" firstAttribute="centerX" secondItem="HyM-gO-vDx" secondAttribute="centerX" id="sYV-BQ-O0s"/>
+                <constraint firstItem="9w6-bC-7CW" firstAttribute="centerX" secondItem="HyM-gO-vDx" secondAttribute="centerX" id="yWe-1P-pYp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labelInfo" destination="9w6-bC-7CW" id="nwF-3Y-28P"/>
+                <outlet property="viewContainer" destination="GUg-UZ-i4j" id="dfb-uv-8QG"/>
+            </connections>
+            <point key="canvasLocation" x="614.5" y="382"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line.png" width="270" height="1"/>
+    </resources>
+</document>
